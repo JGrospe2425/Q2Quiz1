@@ -1,0 +1,152 @@
+/* General Container */
+.container {
+  max-width: 1200px; 
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f8f9fa; 
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); /* Increase opacity if necessary */
+}
+
+/* Header Styles */
+h1 {
+  font-size: 50px; 
+  font-family: 'Arial', sans-serif;
+  font-weight: 600; 
+  color: #493628;
+  text-align: center;
+  letter-spacing: 2px; 
+  text-transform: uppercase;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+h1::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -12px; 
+  width: 70%;
+  height: 6px;
+  background: linear-gradient(90deg, #7209b7, #3a0ca3, #4361ee);
+  border-radius: 3px;
+}
+
+/* Table Styles */
+table {
+  width: 100%; 
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+  margin-bottom: 40px; 
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+thead {
+  background-color: #343a40;
+  color: #fff;
+}
+
+th, td {
+  padding: 18px; 
+  text-align: left;
+  vertical-align: middle;
+}
+
+th {
+  font-weight: 500; 
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+td {
+  font-size: 14px;
+  font-weight: 200;
+  color: #444; 
+}
+
+td img {
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:last-child {
+  border-bottom: none; 
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #fafafa;
+}
+
+/* Image Styles */
+.img-fluid {
+  max-width: 600px; 
+  height: auto;
+  transition: transform 0.3s;
+}
+
+td img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #343a40; 
+  color: #fff; 
+  padding: 20px; 
+  text-align: center;
+  font-size: 14px; 
+  border-top: 4px solid #CC2B52; 
+}
+
+.footer a {
+  color: #AB886D; 
+  text-decoration: none; 
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #AB886D; 
+}
+
+.footer p {
+  margin: 0; 
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  th, td {
+    padding: 16px; /* Increased for better readability */
+  }
+
+  h1 {
+    font-size: 2.5rem; 
+    letter-spacing: 1px; 
+  }
+
+  .img-fluid {
+    max-width: 200px; 
+  }
+
+  .footer {
+    font-size: 12px;
+    padding: 15px;
+  }
+}
